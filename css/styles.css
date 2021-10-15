@@ -173,8 +173,20 @@ a {
   border-radius: 100%;
 }
 
-.icon--primary {
+.icon-container--primary {
   fill: var(--color-primary);
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon--small {
+  width: 24px;
 }
 
 /* Buttons */
@@ -467,5 +479,50 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonial */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial .quote__text {
+}
+
+.testimonial__image-container {
+  position: relative;
+}
+
+.testimonial__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial .icon-container {
+  top: 20px;
+  right: -32px;
+  position: absolute;
+}
+
+.testimonial .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote__text,
+  .testimonial .quote__author {
+    font-size: 2.2rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+  .testimonial .quote__company {
+    white-space: nowrap;
   }
 }
