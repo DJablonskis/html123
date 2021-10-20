@@ -709,3 +709,30 @@ a {
     border: 0;
   }
 }
+
+/* Hero component */
+
+.hero__heading {
+  line-height: 1.15;
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero__tagline {
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  color: #b9c3cf;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
