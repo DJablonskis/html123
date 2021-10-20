@@ -131,7 +131,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -142,6 +141,7 @@ a {
 .list--tick {
   list-style-image: url("../images/tick.svg");
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -830,4 +830,36 @@ a {
 
 .features .block__header {
   margin-bottom: 4rem;
+}
+
+/* Showcase */
+
+.showcase__heading {
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+.showcase__image > img {
+  width: 100%;
+}
+.showcase .media {
+  margin-bottom: 2rem;
+}
+
+.showcase .media__title {
+  color: #ccc;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase .grid {
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+  .showcase__image {
+    justify-self: end;
+  }
+  .showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
 }
