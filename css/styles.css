@@ -811,3 +811,23 @@ a {
   transform: scale(1.15);
   z-index: 4;
 }
+
+/* Features-block */
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature {
+  align-items: center;
+  gap: 4rem 2rem;
+  margin-bottom: 10rem;
+}
+
+.feature:nth-of-type(even) .feature__content {
+  order: 2;
+}
+
+.features .block__header {
+  margin-bottom: 4rem;
+}
